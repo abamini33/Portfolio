@@ -30,22 +30,22 @@ const projects = (await getCollection("work"))
     <div class="wrapper stack gap-8 lg:gap-20">
       <header class="hero">
         <Hero
-          title="Hello, my name is Béni Abandzounou"
-          tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+          title="Bonjour, moi c'est Béni Abandzounou"
+          tagline="Je suis un apprenti Développeur Full-Stack."
           align="start"
         >
           <div class="roles">
-            <Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-            <Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-            <Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+            <Pill><Icon icon="code" size="1.33em" /> Développeur</Pill>
+            <Pill><Icon icon="rocket-launch" size="1.33em" /> Sportif</Pill>
+            <Pill><Icon icon="heart" size="1.33em" /> Passioné</Pill>
           </div>
         </Hero>
 
         <img
-          alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+          alt="Photo de moi à Nara au Japon"
           width="480"
           height="620"
-          src="/assets/portrait.JPG"
+          src="./assets/japon-photo.jpg"
         />
       </header>
 
@@ -55,58 +55,19 @@ const projects = (await getCollection("work"))
     <main class="wrapper stack gap-20 lg:gap-48">
       <section class="section with-background with-cta">
         <header class="section-header stack gap-2 lg:gap-4">
-          <h3>Selected Work</h3>
+          <h3>Mes projets</h3>
           <p>
-            Take a look below at some of my featured work for clients from the
-            past few years.
+            Explorez mes réalisations, découvrez les projets sur lesquels j'ai
+            travaillé et plongez dans le monde concret de mon expérience en
+            développement web.
           </p>
         </header>
-
-        <div class="gallery">
-          <Grid variant="offset">
-            {
-              projects.map((project) => (
-                <li>
-                  <PortfolioPreview project={project} />
-                </li>
-              ))
-            }
-          </Grid>
-        </div>
 
         <div class="cta">
           <CallToAction href="/work/">
-            View All
+            Voir tout
             <Icon icon="arrow-right" size="1.2em" />
           </CallToAction>
-        </div>
-      </section>
-
-      <section class="section with-background bg-variant">
-        <header class="section-header stack gap-2 lg:gap-4">
-          <h3>Mentions</h3>
-          <p>
-            I have been fortunate enough to receive praise for my work in
-            several publications. Take a look below to learn more.
-          </p>
-        </header>
-
-        <div class="gallery">
-          <Grid variant="small">
-            {
-              [
-                "Medium",
-                "BuzzFeed",
-                "The Next Web",
-                "awwwards.",
-                "TechCrunch",
-              ].map((brand) => (
-                <li class="mention-card">
-                  <p>{brand}</p>
-                </li>
-              ))
-            }
-          </Grid>
         </div>
       </section>
     </main>
