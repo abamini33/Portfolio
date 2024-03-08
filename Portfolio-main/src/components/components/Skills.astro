@@ -1,0 +1,86 @@
+---
+import Icon from "./Icon.astro";
+---
+
+<section class="box skills">
+  <div class="stack gap-2 lg:gap-4">
+    <Icon
+      icon="terminal-window"
+      color="var(--accent-regular)"
+      size="2.5rem"
+      gradient
+    />
+    <h2>Full Stack</h2>
+    <p>
+      En tant qu'apprenant Full Stack, je développe actuellement mes compétences
+      pour devenir un développeur web polyvalent, capable de concevoir et de
+      mettre en œuvre des solutions à tous les niveaux d'un projet web, du
+      front-end au back-end.
+    </p>
+  </div>
+  <div class="stack gap-2 lg:gap-4">
+    <Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+    <h2>Rigoureux</h2>
+    <p>
+      Ma nature rigoureuse se reflète dans mon approche du développement web, où
+      chaque détail compte, et dans mon engagement à fournir un travail de
+      qualité.
+    </p>
+  </div>
+  <div class="stack gap-2 lg:gap-4">
+    <Icon
+      icon="strategy"
+      color="var(--accent-regular)"
+      size="2.5rem"
+      gradient
+    />
+    <h2>Curieux</h2>
+    <p>
+      Ma curiosité insatiable est un moteur qui me pousse constamment à explorer
+      de nouvelles opportunités d'apprentissage, à comprendre en profondeur les
+      défis du développement web et à rechercher des solutions efficaces pour
+      les résoudre.
+    </p>
+  </div>
+</section>
+
+<style>
+  .box {
+    border: 1px solid var(--gray-800);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    background-color: var(--gray-999_40);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .skills h2 {
+    font-size: var(--text-lg);
+  }
+
+  .skills p {
+    color: var(--gray-400);
+  }
+
+  @media (min-width: 50em) {
+    .box {
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5rem;
+    }
+
+    .skills h2 {
+      font-size: var(--text-2xl);
+    }
+  }
+</style>
