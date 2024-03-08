@@ -4,7 +4,7 @@ publishDate: 2024-08-03 00:00:00
 img: /assets/cryptowatch.png
 img_alt: site "Crypto Watch"
 description: |
-    Gestion de contacts avec Vue.js.
+    Application de suivi de cryptomonnaies développée avec React.
 tags:
     - Dev
     - React
