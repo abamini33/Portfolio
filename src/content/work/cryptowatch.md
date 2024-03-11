@@ -46,4 +46,4 @@ Améliorations possibles :
 
 Lien vers le code source : https://github.com/abamini33/Crypto-Watch-App
 
-Lien vers le site : https://crypto-watch-app.vercel.app/
+Lien vers le site : https://crypto-beni.vercel.app/
